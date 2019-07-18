@@ -20,6 +20,7 @@
 ############################################################################
 # Debugging constants
 SKIP_DOWNLOAD_PROCESS <- TRUE
+SKIP_UNZIP_PROCESS <- FALSE
 
 ############################################################################
 # Constants (change may be required for your own environment)
@@ -50,6 +51,9 @@ setwd(WORKING_DIRECTORY)
 
 if (! SKIP_DOWNLOAD_PROCESS) {
   download.file(url = SOURCE_FILE_URL, destfile = DEST_FILE_PATH, method = "curl")
+}
+
+if (! SKIP_UNZIP_PROCESS) {
   unzip(DEST_FILE_PATH)
 }
 

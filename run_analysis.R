@@ -19,13 +19,13 @@
 
 ############################################################################
 # Debugging constants
-SKIP_DOWNLOAD_PROCESS <- FALSE
+SKIP_DOWNLOAD_PROCESS <- TRUE
 
 ############################################################################
 # Constants (change may be required for your own environment)
 
 WORKING_DIRECTORY <- getwd()
-DEST_FILE_PATH <- "raw.zip"
+DEST_FILE_PATH <- "getdata_projectfiles_UCI HAR Dataset.zip"
 RESULT_FILE_PATH <- "result.txt"
 
 SOURCE_FILE_URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"

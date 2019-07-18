@@ -1,0 +1,12 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Data
+UCI HAR Dataset/
+raw.zip
+
+# Markdown Preview
+*.html

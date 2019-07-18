@@ -28,6 +28,18 @@ Other variables that you may to change
 * SOURCE_FILE_URL: in case the source url changes.
 * SKIP_DOWNLOAD_PROCESS: flag that may be turned on, in case you are debugging the script and want to skip the initial download and uncompress steps.
 
+## Summary of the run_analysis script
+
+1. Download and uncompress the file (there are flags to control these steps).
+2. Load train data.
+3. Label (change columns) for train data based on label files.
+4. Repeat step 2 and 3 for test data.
+5. Combine test and train data.
+6. Remove unwanted columns (keep basically mean and std features).
+7. Create tidy dataset (mean for each subject and activity).
+8. Convert activity as a factor.
+9. Export result file.
+
 ## Output
 
 At the end of the process the script will generate a tidy data file (which default name is "result.txt" but is based on the *RESULT_FILE_PATH* variable).
